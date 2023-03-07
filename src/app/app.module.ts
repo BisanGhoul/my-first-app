@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+//1 - install it for ngModel to work
+import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +9,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    //2 - add it to import array
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
